@@ -1,0 +1,48 @@
+:root {
+  color-scheme: light;
+  font-family: "Segoe UI", sans-serif;
+  background: #f4f2ec;
+  color: #20231f;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 280px;
+  min-height: 100vh;
+  min-height: 100svh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.week-counter {
+  display: grid;
+  justify-items: center;
+  gap: clamp(8px, 2vw, 18px);
+  text-align: center;
+}
+
+.week-counter__label {
+  margin: 0;
+  color: #72746d;
+  font-family: "Consolas", monospace;
+  font-size: clamp(0.7rem, 1.4vw, 0.85rem);
+  letter-spacing: 0.22em;
+}
+
+.week-counter__number {
+  color: #20231f;
+  font-size: clamp(10rem, 40vw, 27rem);
+  font-weight: 800;
+  letter-spacing: -0.105em;
+  line-height: 0.82;
+  font-variant-numeric: tabular-nums;
+}
